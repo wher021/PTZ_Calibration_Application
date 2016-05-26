@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CBC92B54-DF4A-46DC-983C-EFC14610069E}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>CalibrationApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\u030373\Desktop\DekstopApp\sdk-2.0.4\examples;C:\Users\u030373\Desktop\DekstopApp\sdk-2.0.4;C:\Users\u030373\Desktop\DekstopApp\sdk-2.0.4\cerial;$(OPENCV_DIR)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_ts300d.lib;opencv_world300d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\u030373\Desktop\DekstopApp\sdk-2.0.4\examples;C:\Users\u030373\Desktop\DekstopApp\sdk-2.0.4;C:\Users\u030373\Desktop\DekstopApp\sdk-2.0.4\cerial;$(OPENCV_DIR)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_ts300d.lib;opencv_world300d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Add_Position_Dialog_Box.cpp" />
+    <ClCompile Include="ALGLIB\alglibinternal.cpp" />
+    <ClCompile Include="ALGLIB\alglibmisc.cpp" />
+    <ClCompile Include="ALGLIB\ap.cpp" />
+    <ClCompile Include="ALGLIB\integration.cpp" />
+    <ClCompile Include="ALGLIB\interpolation.cpp" />
+    <ClCompile Include="ALGLIB\linalg.cpp" />
+    <ClCompile Include="ALGLIB\optimization.cpp" />
+    <ClCompile Include="ALGLIB\solvers.cpp" />
+    <ClCompile Include="ALGLIB\specialfunctions.cpp" />
+    <ClCompile Include="CalibrationUI.cpp" />
+    <ClCompile Include="opencv_read.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Add_Position_Dialog_Box.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\alglibinternal.h" />
+    <ClInclude Include="ALGLIB\alglibmisc.h" />
+    <ClInclude Include="ALGLIB\ap.h" />
+    <ClInclude Include="ALGLIB\integration.h" />
+    <ClInclude Include="ALGLIB\interpolation.h" />
+    <ClInclude Include="ALGLIB\linalg.h" />
+    <ClInclude Include="ALGLIB\optimization.h" />
+    <ClInclude Include="ALGLIB\solvers.h" />
+    <ClInclude Include="ALGLIB\specialfunctions.h" />
+    <ClInclude Include="ALGLIB\stdafx.h" />
+    <ClInclude Include="CalibrationUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Devices.h" />
+    <ClInclude Include="Signal_lamp_data.h" />
+    <ClInclude Include="myVideoStreamerClass.h" />
+    <ClInclude Include="robot_API.h" />
+    <ClInclude Include="PortChatClass.h" />
+    <ClInclude Include="zoom_cam_API.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add_Position_Dialog_Box.resx">
+      <DependentUpon>Add_Position_Dialog_Box.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalibrationUI.resx">
+      <DependentUpon>CalibrationUI.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sdk-2.0.4\build\visual_studio_2013\monitor\monitor.vcxproj">
+      <Project>{0f2b38a2-90f3-4362-85f9-a95a1770b6eb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

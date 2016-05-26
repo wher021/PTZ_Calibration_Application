@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{66410f0c-821a-49f8-b54c-c3555c38b396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ALGLIB">
+      <UniqueIdentifier>{29144e8f-01ae-49a8-b90f-594bda496745}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="opencv_read.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Add_Position_Dialog_Box.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\alglibinternal.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\alglibmisc.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\ap.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\integration.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\linalg.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\optimization.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\solvers.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\specialfunctions.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGLIB\interpolation.cpp">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalibrationUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zoom_cam_API.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_API.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="myVideoStreamerClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PortChatClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Add_Position_Dialog_Box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Signal_lamp_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Devices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\alglibinternal.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\alglibmisc.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\ap.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\integration.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\linalg.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\optimization.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\solvers.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\specialfunctions.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\interpolation.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ALGLIB\stdafx.h">
+      <Filter>Header Files\ALGLIB</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalibrationUI.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Position_Dialog_Box.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
